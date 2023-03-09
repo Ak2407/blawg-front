@@ -53,7 +53,7 @@ const Navbar = (props) => {
           <Link className="nav-link" to="/bookmark">
             <Button type={BUTTON_TYPES.TERTIARY} btnText="BOOKMARKS" />
           </Link>
-          <Link className="nav-link" to='https://akshit-resume.netlify.app/' target="_blank">
+          <Link className="nav-link" to='https://akshit-resume.vercel.app/' target="_blank">
             <Button type={BUTTON_TYPES.TERTIARY} btnText="CONTACT" />
           </Link>
         </div>
