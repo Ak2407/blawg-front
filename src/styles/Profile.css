@@ -1,0 +1,174 @@
+.profile-page{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+    gap: 50px;
+    /* background-color: blue; */
+}
+
+.profile-card{
+    background-color: white;
+    border-radius: 19px;
+    box-shadow: 3px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 358px;
+    height: 530px;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    /* padding: 20px; */
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+}
+
+.profile-name{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'metrophobic';
+}
+
+.profile-job-container{
+    background-color: #BBEDF0;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 35px;
+    padding: 10px;
+}
+.profile-job{
+    font-family: 'metrophobic';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile-bio{
+    font-family: 'metrophobic';
+    font-weight: 300;
+    font-size: 18px;
+    width: 80%;
+}
+
+.edit-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.edit-btn{
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+
+.profile-socials{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 18px;
+    width: 358px;
+    height: 230px;
+    border: 2px solid black;
+    border-radius: 19px;
+    box-shadow: 3px 5px black;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* margin-top: 80px; */
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.social-img{
+    width: 50px;
+    height: 50px;
+}
+
+.social-link-container{
+    background-color: #DFF979;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 60%;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 1px 2px black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.social-link-container:hover{
+    box-shadow: 0px 1px black;
+}
+
+.social-link{
+    font-family: 'metrophobic';
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.profile-post{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.profile-post-header{
+    background-color: var(--purple);
+    border: 1px solid black;
+    border-radius: 50px;
+    /* text-align: center; */
+    width: 50%;
+    padding: 25px;
+}
+
+.profile-post-text{
+    font-family: 'metrophobic';
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.profile-posts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-post-more{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.profile-post-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.profile-action-container{
+    cursor: pointer;
+}
+

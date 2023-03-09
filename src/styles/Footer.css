@@ -1,0 +1,22 @@
+.footer-links{
+    /* background-color: red; */
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px solid black;
+    gap: 50px;
+}
+
+.footer-link{
+    font-family: 'inika';
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-weight: 200;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}

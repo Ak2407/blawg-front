@@ -1,0 +1,101 @@
+.navbar{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s ease-in-out;
+}
+
+.homeNav{
+    width: 90vw;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.mainNav{
+    width: 100%;
+    height: 100px;
+}
+
+
+
+.logo-holder{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex: 1; */
+}
+
+.logo{
+    width: 110px;
+    height: 71px;
+    margin-bottom: 20px;
+}
+
+.link-holder{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+.nav-link-holder{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.profile-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 50px;
+    background-color: black;
+}
+
+.user-name{
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 27px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.user-img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.logout-btn{
+    font-family: 'poppins';
+    background-color: #F34444;
+    font-size: 20px;
+    border: 5px solid black;
+    border-radius: 50px;
+    font-weight: 900;
+    padding: 5px;
+    cursor: pointer;
+    width: 150px;
+    transition: 0.1s ease-in-out;
+}
+
+.logout-btn:hover{
+    background-color: #fa5252;
+}
+
+
+
