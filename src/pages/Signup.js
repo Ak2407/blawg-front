@@ -75,10 +75,11 @@ const Signup = () => {
       </div>
       <div className="right">
         <h1 className="right-title">Get Started,</h1>
+        <h1 className="right-heading">BLAWG</h1>
         <div className="signup-form">
           <form onSubmit={handleSubmit}>
             <input
-              className="form-input"
+              className="signup-form-input"
               type="name"
               id="name"
               name="name"
@@ -92,7 +93,7 @@ const Signup = () => {
               <p className="form-error">{errors.name}</p>
             ) : null}
             <input
-              className="form-input"
+              className="signup-form-input"
               type="email"
               id="email"
               name="email"
@@ -106,7 +107,7 @@ const Signup = () => {
               <p className="form-error">{errors.email}</p>
             ) : null}
             <input
-              className="form-input"
+              className="signup-form-input"
               type="password"
               id="password"
               name="password"
@@ -120,7 +121,7 @@ const Signup = () => {
               <p className="form-error">{errors.password}</p>
             ) : null}
             <input
-              className="form-input"
+              className="signup-form-input"
               type="password"
               id="confirm_password"
               name="confirm_password"
@@ -135,7 +136,7 @@ const Signup = () => {
             ) : null}
 
             <select
-              className="form-input"
+              className="signup-form-input"
               id="job"
               name="job"
               autocomplete="off"
@@ -154,7 +155,7 @@ const Signup = () => {
               <p className="form-error">{errors.job}</p>
             ) : null}
             <input
-              className="form-input"
+              className="signup-form-input"
               type="text"
               id="bio"
               name="bio"

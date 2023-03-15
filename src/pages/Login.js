@@ -23,24 +23,24 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-
     async function checkUser() {
-        const token = localStorage.getItem('TOKEN');
-        if (token) {
-            const response = await API_CLIENT.get(process.env.REACT_APP_AUTHENTICATE_URL, {
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                }
-            })
-            if (response.status === 200) {
-                navigate('/home');
-            }
-
+      const token = localStorage.getItem("TOKEN");
+      if (token) {
+        const response = await API_CLIENT.get(
+          process.env.REACT_APP_AUTHENTICATE_URL,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
+        if (response.status === 200) {
+          navigate("/home");
         }
+      }
     }
     checkUser();
-},)
-
+  });
 
   const { values, handleBlur, handleSubmit, handleChange, errors, touched } =
     useFormik({
@@ -50,10 +50,8 @@ const Login = () => {
         setIsLoad(true);
         API_CLIENT.post(process.env.REACT_APP_LOGIN_URL, values)
           .then((res) => {
-            
-            if(res.data.success) {
+            if (res.data.success) {
               toast(res.data.message, {
-              
                 style: {
                   borderRadius: "25px",
                   background: "#333",
@@ -65,8 +63,7 @@ const Login = () => {
               res.data.message = undefined;
               dispatch(addUser(res.data));
               console.log(res.data);
-              navigate('/home');
-
+              navigate("/home");
             }
             setIsLoad(false);
           })
@@ -75,7 +72,6 @@ const Login = () => {
             alert("Error !! Try again after some time");
             setIsLoad(false);
           });
-         
       },
     });
 
@@ -116,7 +112,7 @@ const Login = () => {
               </div>
 
               <div className="login-form">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="login-form-container">
                   <input
                     className="form-input"
                     type="email"
@@ -145,7 +141,9 @@ const Login = () => {
                   {errors.password && touched.password ? (
                     <p className="form-error">{errors.password}</p>
                   ) : null}
-                  <a className="forgot">Forgot Password?</a>
+                  <div className="forgot">
+                    <a>Forgot Password?</a>
+                  </div>
                   <div className="loginBtn">
                     {isLoad ? (
                       <CircularProgress />
